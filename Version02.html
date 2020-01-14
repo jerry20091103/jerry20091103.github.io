@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Personal Webpage</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--Google Icons-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            /* Special thanks to W3SSHOOLS for providing the side nav templates :-P */
+            .sidenav {
+            height: 100%;
+            width: 200px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color:rgb(85, 0, 0);
+            overflow-x: hidden;
+            padding-top: 0px;
+            }
+
+            .sidenav a {
+            padding: 6px 6px 6px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+            font-family: fantasy;
+            }
+
+            .sidenav p {
+            padding: 6px 6px 6px 32px;
+            text-decoration: none;
+            font-size: 15px;
+            color: #646464;
+            display: block;
+            font-family: fantasy;
+            margin: 0px;
+            }
+
+            .sidenav a:hover {
+            color: #f1f1f1;
+            }
+
+            .main {
+            margin-left: 200px;
+            padding: 20px;
+            line-height: 30px;
+            }
+
+            @media screen and (max-height: 450px) {
+            .sidenav {padding-top: 15px;}
+            .sidenav a {font-size: 18px;}
+            }
+            /* here are the fonts */
+            .title{
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                color: rgba(255, 255, 255, 0.55);
+            }
+            .texts{
+                color: white;
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size:larger;
+            }
+            .clock_texts{
+                color:rgba(196, 196, 196, 0.548);
+                font-family: fantasy;
+                text-align: center;
+                padding-left: 32px;
+            }
+
+            /* these are for the things at the bottom*/
+            .bottom{
+                position:relative;
+                bottom:0px;
+                width:100%;
+            }
+            /* for social media icons */
+            .fa {
+                padding: 20px;
+                
+                
+                text-align: center;
+                text-decoration: none;
+}
+
+        </style>
+    </head>
+    <body style="background-image: url('dark_red_background.jpg'); background-size: cover;">
+        <!--side nav content-->
+        <div class="sidenav">
+
+            <!--image section-->
+            <img src="Me.JPG" alt="a photo of me on a mountain" width="200px" height="200px">
+
+            <!--tabs section-->
+            <a href="#About"><i class="material-icons">info</i> About</a>
+            <a href="#Contact"><i class="material-icons">contacts</i> Contact</a>
+            <a href="#Projects"><i class="material-icons">folder_open</i> Projects</a>
+            <a href="#Others"><i class="material-icons">add_box</i> Others</a>
+            <br>
+            
+            <div class="bottom" style="position: absolute;">
+                <hr>
+                <!--clock section-->
+                <p>Current Time:</p>
+                <span id="date" class="clock_texts"></span>
+                <br>
+                <span id="clock" class="clock_texts"></span>
+                <p></p>
+
+                <!--BGM section-->
+                <iframe width="200" height="100" 
+                    src="https://www.youtube.com/embed/iKnwVvXkWq0?&autoplay=1" frameborder="0" 
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    volumn="0">
+                </iframe> 
+            </div>
+        </div>
+
+        <!---------------------------------------------------------------------------------------->
+        <!--MAIN Content-->
+        <div class="main">
+        <h1 class="title" id="About"><i class="material-icons">info</i> About</h1>
+            <h2 class="title">Basic Info</h2> 
+                <div class="texts">
+                    <ul>
+                        <li>Name : 莊鈞堯 Jerry</li>
+                        <li>Student ID : 108062103</li>
+                        <li>Age : 19</li>
+                        <li>Birthday : 2000/11/3</li>
+                        <li>Blood type : O</li>
+                        <li>Height : ### cm</li>
+                        <li>Home Town : Taoyuan</li>
+                    </ul>
+                </div>
+            <h2 class="title">Education</h2>
+                <div class="texts">
+                    <ol>
+                        <li><a href="http://www.dches.tyc.edu.tw/" style="color:white">
+                            Da Cheng Elementary School</a></li>
+                        <li><a href="http://learn.hshs.tyc.edu.tw/ischool/publish_page/503/" style="color:white">
+                            Shin Shing Junior-high School</a></li>
+                        <li><a href="http://learn.hshs.tyc.edu.tw/ischool/publish_page/0/" style="color:white">
+                            Shin Shing High School</a></li>
+                        <li><a href="https://www.nthu.edu.tw/" style="color:white">
+                            National Tsing Hua Univsersity</a> - Department of Computer Science</li>
+                    </ol>
+                </div>
+            <h2 class="title">Personal Interests</h2>
+                <div class="texts">
+                    <ul>
+                        <li>Guitar, Guitar Modding</li>
+                        <li>Computer Games and Game Development</li>
+                        <li>Home Made Electronics</li>
+                        <li>Music</li>
+                        <li>Trying Audio Gears</li>
+                        <li>Photography / Cinematography</li>
+                    </ul>
+                </div>
+                <p><br></p>
+
+        <h1 class="title" id="Contact"><i class="material-icons">contacts</i> Contact</h1>
+            <h2 class="title">Basics</h2>
+                <div class="texts">
+                    <ul>
+                        <li>Phone : 0933 ### ### (Guess it :P)</li>
+                        <li>Address : Somewhere I Belong</li>
+                        <li>Email : jerry20091103@gmail.com</li>
+                    </ul>
+                </div>
+            <h2 class="title">Social Media</h2>
+                <div class="texts">
+                    <ul>
+                        <li><a href="https://www.facebook.com/jerry200911" class="fa fa-facebook" style="color: white; padding-left: 24px;"></a> 
+                            <a href="https://www.facebook.com/jerry200911" style="color:white;">
+                            My Facebook Page</a></li>
+                        <li><a class="fa fa-instagram" style="color: white"></a>
+                            I don't use Instagram :P</li>
+                    </ul>
+                </div>
+                <p><br></p>
+        
+        <h1 class="title" id="Projects"><i class="material-icons">folder_open</i> Projects</h1>
+            <h2 class="title">I2P Final Project - Beat' em</h2>
+                <div class="texts">
+                    <h3 class="title">Introduction</h3>
+                        <p class="texts">
+                            An exciting 2D shooter. A awesome rhythm game. Why not Both?<br>
+                            Beat' em is a rhythm based 2D shooter where music is your weapon. Time your button
+                                press carefully according to the rhythm and aim at the enemies. Currently we have a few 
+                                songs available. More of them comming soon!
+                        </p>
+                        <p>
+                            <img src="game (4).png" alt="Screen shot of the game" width="480px" height="270px"> 
+                            <img src="game (2).png" alt="Screen shot of the game" width="480px" height="270px">
+                            <img src="game (3).png" alt="Screen shot of the game" width="480px" height="270px">
+                            <img src="game (1).png" alt="Screen shot of the game" width="480px" height="270px">
+                        </p>
+                    <h3 class="title">Downloads</h3>
+                        <p class="texts">
+                            Beat' em is completely free and open-source
+                        </p>
+                        <p>
+                            <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fdrive.google.com%2Ffile%2Fd%2F16qzkPSqN-QLX00987l8a0SzfOn9AhhXc%2Fview%3Fusp%3Dsharing%26fbclid%3DIwAR0Gtbejta4GGkCIfG9Ri9yCKY_ORBCd4rdzBapmLP7lQNGcES2GVqEOOSg&h=AT2UvoYUbmL3NXRDwlTb-_-vO3r8L-LbqMJ22omidhOre69uL6ICFP_LznN4dyWLHprIsiwjIfq9t49OgbDbj1RxEpotCGslGJVnXLcTlBY6uAS2H0_VNnznxWhRzt4qFAGaPQ"
+                             style="color: white;">
+                            Download Link (Google Drive)</a>
+                            <br>
+                            <a href="https://github.com/jerry20091103/I2P_Final_Project---Beat-em" style="color: white;">
+                            Source Files (GitHub)</a>
+                        </p>
+                </div>
+            <p><br></p>
+
+        <h1 class="title" id="Others"><i class="material-icons">add_box</i> Others</h1>
+            <h2 class="title">TBD</h2>
+                <p><br></p>
+
+
+        <!--Things in the bottom-->
+            <div class="bottom">
+                <p class="texts" style="font-size: medium;">
+                    <br>
+                    Awesome background track from one of my favorite games : <a href="http://www.celestegame.com/" style="color: white;">CELESTE</a><br>
+                    Mirror Temple - Mirror Magic Remix by 2 Mello, original version by Lena Raine
+                </p>
+            </div>
+        
+        </div>
+   
+    </body>
+
+    <script>
+        var myVar = setInterval(myTimer, 1000);
+
+        function myTimer() {
+            var d = new Date();
+            document.getElementById("date").innerHTML = d.toLocaleDateString();
+            document.getElementById("clock").innerHTML = d.toLocaleTimeString('en-US');
+        }
+    </script>
+
+</html> 
